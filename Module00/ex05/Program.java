@@ -66,7 +66,7 @@ public class Program {
                 attStatus[sIdx][cIdx] = status.equals("HERE") ? "1" : "-1";
             }
         }
-
+        sc.close();
         // Calculate column width based on header length
         int colWidth = 0;
         for (int i = 0; i < slotCount; i++) {
