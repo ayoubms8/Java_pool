@@ -1,4 +1,4 @@
-package Module01.ex03;
+package Module01.ex02;
 
 public class UserNotFoundException extends RuntimeException {
     public UserNotFoundException(String message) {

@@ -1,10 +1,11 @@
-package Module01.ex03;
+
+
+package Module01.ex02;
 
 public class User {
     private final int id;
     private String name;
     private int balance;
-    private TransactionsList transactions;
 
     public User(String name, int balance) {
         if (balance < 0) {
@@ -13,7 +14,6 @@ public class User {
         this.id = UserIdsGenerator.getInstance().generateId();
         this.name = name;
         this.balance = balance;
-        this.transactions = new TransactionLinkedList();
     }
 
     public int getId() {
@@ -30,10 +30,6 @@ public class User {
 
     public void setBalance(int balance) {
         this.balance = balance;
-    }
-
-    public TransactionsList getTransactions() {
-        return transactions;
     }
 
     @Override
